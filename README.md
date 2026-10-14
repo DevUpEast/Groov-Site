@@ -1,6 +1,8 @@
 # Groov-Site
 
-This repository is retired. The Groov website now lives in the main app repo under `site/`:
+Retired. The Groov website is maintained in the main app repo:
 https://github.com/DevUpEast/Groov/tree/master/site
 
-Cloudflare Pages should deploy from that repo (root directory `site`).
+This repo still feeds the Cloudflare Worker `groov-proxy` (route isaaceast.com/groov*),
+which serves the files under `groov/` as static assets. Point that Workers Build at
+DevUpEast/Groov with root directory `site` and archive this repo.
