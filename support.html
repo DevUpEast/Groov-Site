@@ -287,7 +287,7 @@
 
 <div class="hero">
   <h1>Support</h1>
-  <p>Get help with Groov, manage your data, or request account deletion.</p>
+  <p>Get help with Groov, manage your data, or delete your account.</p>
 </div>
 
 <main>
@@ -299,7 +299,7 @@
       <h2>Delete Your Account &amp; Data</h2>
     </div>
     <div class="card-body">
-      <p>You have the right to permanently delete your Groov account and all associated data at any time. This removes everything from our systems: habits, completions, challenge history, settings, and your email address.</p>
+      <p>You can permanently delete your Groov account and all associated data at any time. This removes everything from our systems: habits, completions, challenge history, settings, cached coaching messages, and your email address. If you only want a fresh start, <strong>Settings → Clear All Data</strong> wipes your habit data but keeps the account.</p>
 
       <div class="warn-callout">⚠️ <strong>Deletion is permanent and cannot be undone.</strong> Your streak history, challenge progress, and all habit data will be gone forever.</div>
 
@@ -319,26 +319,21 @@
         </li>
       </ol>
 
-      <p style="margin-top:20px;"><strong>Option 2: Email request</strong></p>
-      <p>If you can't access the app, you can also request deletion by email:</p>
+      <p style="margin-top:20px;"><strong>Option 2: If you can't sign in</strong></p>
       <ol class="step-list">
         <li>
           <span class="step-num">1</span>
-          <span class="step-text">Email <strong>beastlyiceking@gmail.com</strong> with the subject <strong>"Delete My Account"</strong></span>
+          <span class="step-text">Open a request at <a href="https://github.com/DevUpEast/Groov/issues/new?title=Account%20deletion%20request">github.com/DevUpEast/Groov/issues</a> titled "Account deletion request". Do <strong>not</strong> post your email address publicly; we will reply with a private way to confirm which account is yours.</span>
         </li>
         <li>
           <span class="step-num">2</span>
-          <span class="step-text">Include the email address you used to sign up for Groov</span>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <span class="step-text">We will confirm deletion within <strong>30 days</strong> and send you a confirmation email</span>
+          <span class="step-text">We confirm the deletion within <strong>30 days</strong>.</span>
         </li>
       </ol>
 
-      <a class="email-button" href="mailto:beastlyiceking@gmail.com?subject=Delete%20My%20Account&body=Please%20delete%20my%20Groov%20account.%20My%20account%20email%20address%20is%3A%20">
+      <a class="email-button" href="https://github.com/DevUpEast/Groov/issues/new?title=Account%20deletion%20request">
         <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Email Deletion Request
+        Request Deletion
       </a>
     </div>
   </div>
@@ -350,12 +345,12 @@
       <h2>General Support</h2>
     </div>
     <div class="card-body">
-      <p>For any questions, bugs, or feedback, reach out directly:</p>
+      <p>For questions, bugs or feedback, open an issue on GitHub (no account details, please) or use the support contact on the app's store listing:</p>
       <p>
         <strong>Isaac East</strong><br>
-        <a href="mailto:beastlyiceking@gmail.com">beastlyiceking@gmail.com</a>
+        <a href="https://github.com/DevUpEast/Groov/issues">github.com/DevUpEast/Groov/issues</a>
       </p>
-      <div class="callout">We typically respond within <strong>5 business days</strong>. Please include your device model and iOS version to help us debug faster.</div>
+      <div class="callout">We typically respond within <strong>5 business days</strong>. Please include your device model and iOS or Android version to help us debug faster.</div>
     </div>
   </div>
 
@@ -369,17 +364,17 @@
 
       <div class="faq-item">
         <p class="faq-q">How do I turn off habit reminders?</p>
-        <p class="faq-a">Go to the Settings screen in the app and tap on any habit's notification setting to disable it. You can also turn off all Groov notifications in iOS Settings → Groov → Notifications.</p>
+        <p class="faq-a">Every reminder has its own switch under Settings → Notifications: the daily reminders, each habit's reminder, and the evening Smart Check-in. The master switch at the top turns them all off, and you can also silence Groov in your device's notification settings.</p>
       </div>
 
       <div class="faq-item">
         <p class="faq-q">My streak reset incorrectly. What do I do?</p>
-        <p class="faq-a">Streaks are calculated based on daily completions synced to your account. If you believe your streak was lost in error, email us with your account email and the habit name and we'll investigate.</p>
+        <p class="faq-a">Streaks count consecutive days, in your device's local time zone, on which a habit hit its goal. The overall streak needs every habit done. If you think one was lost in error, open an issue with the habit name and the dates involved (no account details) and we'll investigate.</p>
       </div>
 
       <div class="faq-item">
         <p class="faq-q">Is my habit data backed up?</p>
-        <p class="faq-a">Yes. All your data is securely synced to the cloud via Supabase and will be restored if you reinstall the app and log back in.</p>
+        <p class="faq-a">Yes. Your habits, completions, challenges and settings sync to the cloud and are restored when you sign in again after a reinstall or on a new phone. Custom photo icons currently stay on the device they were chosen on.</p>
       </div>
 
       <div class="faq-item">
@@ -389,17 +384,22 @@
 
       <div class="faq-item">
         <p class="faq-q">How do I export my data?</p>
-        <p class="faq-a">Email us at <a href="mailto:beastlyiceking@gmail.com">beastlyiceking@gmail.com</a> with the subject "Data Export Request" and we'll send you a copy of your data within 30 days.</p>
+        <p class="faq-a">An in-app export is on the roadmap. Until then, open an issue titled "Data export request" and we'll arrange a private way to send you a copy within 30 days.</p>
       </div>
 
       <div class="faq-item">
         <p class="faq-q">How do I reset my password?</p>
-        <p class="faq-a">You can reset your password two ways: from the <strong>Settings screen</strong> inside the app, or from the login screen by tapping <strong>"Forgot password?"</strong> and entering your email address. You'll receive a password reset link within a few minutes. Check your spam folder if it doesn't arrive.</p>
+        <p class="faq-a">If you signed up with email, reset it from the <strong>Settings screen</strong> or by tapping <strong>"Forgot password?"</strong> on the sign-in screen; a reset code arrives by email within a few minutes (check spam). Apple and Google accounts have no Groov password; manage them with Apple or Google.</p>
       </div>
 
       <div class="faq-item">
         <p class="faq-q">Can I delete my account directly in the app?</p>
-        <p class="faq-a">Yes. Go to <strong>Settings → Delete Account</strong> in the app to permanently delete your account and all associated data immediately. You can also email us at <a href="mailto:beastlyiceking@gmail.com">beastlyiceking@gmail.com</a> with the subject "Delete My Account" if you prefer.</p>
+        <p class="faq-a">Yes. Go to <strong>Settings → Delete Account</strong> to permanently delete your account and all associated data immediately. If you can't sign in, see the deletion request steps above.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What does the AI coach see?</p>
+        <p class="faq-a">Only your habit names, completion statistics, how long you've used Groov and your display name, sent from our server to Anthropic's Claude API to write the message. Never your email, password or photos. Details are in the <a href="privacy-policy.html#ai-coach">Privacy Policy</a>.</p>
       </div>
 
     </div>
